@@ -12,15 +12,15 @@ public class TestController {
     @Value("${from}")
     private String from;
 
-    @RequestMapping("/from")
-    public String from() {
-        return this.from;
-    }
-
+//    @RequestMapping("/from")
+//    public String from() {
+//        return this.from;
+//    }
+    @RequestMapping("/setFrom")
     public void setFrom(String from) {
         this.from = from;
     }
-
+    @RequestMapping("/getFrom")
     public String getFrom() {
         return from;
     }
